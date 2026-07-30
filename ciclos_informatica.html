@@ -15,13 +15,14 @@
   --texto-suave:#5a6570;
 }
 *{box-sizing:border-box;}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--gris-fondo);color:var(--texto);}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--gris-fondo);color:var(--texto);text-align:center;}
 html.bloqueado, html.bloqueado body{overflow:hidden !important;height:100%;}
 
 header.cabecera{
   background:#fff;
   border-bottom:1px solid var(--gris-borde);
   padding:14px 24px;
+  text-align:center;
 }
 .cabecera-contenido h1{
   font-size:16px;
@@ -36,13 +37,15 @@ header.cabecera{
 }
 .cabecera-contenido a.enlace-oficial:hover{text-decoration:underline;}
 
-main{max-width:1100px;margin:0 auto;padding:20px 24px 60px;}
+main{max-width:1100px;margin:0 auto;padding:20px 24px 60px;text-align:center;}
 
 .buscador-wrap{
   display:flex;
   gap:10px;
-  margin-bottom:22px;
+  margin:0 auto 22px;
   flex-wrap:wrap;
+  justify-content:center;
+  max-width:700px;
 }
 #buscador{
   flex:1;
@@ -51,6 +54,7 @@ main{max-width:1100px;margin:0 auto;padding:20px 24px 60px;}
   border:1px solid var(--gris-borde);
   border-radius:8px;
   font-size:14px;
+  text-align:center;
 }
 #filtroNivel{
   padding:10px 14px;
@@ -58,6 +62,7 @@ main{max-width:1100px;margin:0 auto;padding:20px 24px 60px;}
   border-radius:8px;
   font-size:14px;
   background:#fff;
+  text-align:center;
 }
 
 .categoria-titulo{
@@ -66,11 +71,13 @@ main{max-width:1100px;margin:0 auto;padding:20px 24px 60px;}
   margin:26px 0 10px 0;
   border-bottom:2px solid var(--azul);
   padding-bottom:6px;
+  text-align:center;
 }
 .grid-ciclos{
   display:grid;
   grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
   gap:14px;
+  text-align:center;
 }
 .tarjeta-ciclo{
   background:#fff;
@@ -79,6 +86,7 @@ main{max-width:1100px;margin:0 auto;padding:20px 24px 60px;}
   padding:16px;
   cursor:pointer;
   transition:box-shadow .15s, transform .15s;
+  text-align:center;
 }
 .tarjeta-ciclo:hover{
   box-shadow:0 4px 14px rgba(0,0,0,.08);
@@ -95,7 +103,7 @@ main{max-width:1100px;margin:0 auto;padding:20px 24px 60px;}
   margin:0;
 }
 
-#resultadosModulos{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;}
+#resultadosModulos{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;text-align:center;}
 .tarjeta-modulo{
   background:#fff;
   border:1px solid var(--gris-borde);
@@ -103,6 +111,7 @@ main{max-width:1100px;margin:0 auto;padding:20px 24px 60px;}
   padding:14px 16px;
   cursor:pointer;
   transition:box-shadow .15s, transform .15s;
+  text-align:center;
 }
 .tarjeta-modulo:hover{box-shadow:0 4px 14px rgba(0,0,0,.08);transform:translateY(-2px);}
 .tarjeta-modulo .cod-badge{
@@ -119,7 +128,7 @@ main{max-width:1100px;margin:0 auto;padding:20px 24px 60px;}
 
 .oculto{display:none !important;}
 
-.sin-resultados{color:var(--texto-suave);font-size:13px;padding:20px 0;}
+.sin-resultados{color:var(--texto-suave);font-size:13px;padding:20px 0;text-align:center;}
 
 /* Vista de ciclo a pantalla completa */
 .vista-ciclo{
@@ -128,12 +137,14 @@ main{max-width:1100px;margin:0 auto;padding:20px 24px 60px;}
   z-index:1000;
   display:flex;
   flex-direction:column;
+  text-align:center;
 }
 .vista-header{
   background:var(--azul);
   color:#fff;
   padding:14px 24px;
   flex-shrink:0;
+  text-align:center;
 }
 .btn-volver{
   background:rgba(255,255,255,.15);
@@ -156,19 +167,20 @@ main{max-width:1100px;margin:0 auto;padding:20px 24px 60px;}
   max-width:1000px;
   margin:0 auto;
   width:100%;
+  text-align:center;
 }
 .curso-bloque{margin-bottom:28px;}
-.curso-bloque h3{font-size:15px;color:var(--azul-osc);border-bottom:1px solid var(--gris-borde);padding-bottom:6px;}
+.curso-bloque h3{font-size:15px;color:var(--azul-osc);border-bottom:1px solid var(--gris-borde);padding-bottom:6px;text-align:center;}
 
-table.tabla-modulos{width:100%;border-collapse:collapse;font-size:13.5px;}
+table.tabla-modulos{width:100%;border-collapse:collapse;font-size:13.5px;text-align:center;}
 table.tabla-modulos th{
-  text-align:left;
+  text-align:center;
   padding:8px 10px;
   background:#eef2f5;
   font-size:12px;
   color:var(--texto-suave);
 }
-table.tabla-modulos td{padding:9px 10px;border-bottom:1px solid var(--gris-borde);}
+table.tabla-modulos td{padding:9px 10px;border-bottom:1px solid var(--gris-borde);text-align:center;}
 .fila-modulo{cursor:pointer;}
 .fila-modulo:hover td{background:#f0f5f9;}
 .fila-modulo.abierta td{
@@ -180,29 +192,32 @@ table.tabla-modulos td{padding:9px 10px;border-bottom:1px solid var(--gris-borde
 .fila-modulo.abierta .cod-mod{color:#fff;}
 
 .fila-detalle td{background:#fbfbfb;padding:0;}
-.fila-detalle .detalle-contenido{padding:16px 20px;}
+.fila-detalle .detalle-contenido{padding:16px 20px;text-align:center;}
 .ra-card{
   border:1px solid var(--gris-borde);
   border-radius:8px;
   margin-bottom:12px;
   overflow:hidden;
+  text-align:center;
 }
 .ra-header{
   background:#eef2f5;
   padding:9px 14px;
   font-size:13.5px;
+  text-align:center;
 }
 .ra-header .etiqueta-ra{color:var(--texto-suave);font-size:12px;margin-left:6px;}
-.ra-body{padding:10px 14px;}
-.ce-list{list-style:none;margin:0;padding:0;}
+.ra-body{padding:10px 14px;text-align:center;}
+.ce-list{list-style:none;margin:0;padding:0;text-align:center;}
 .ce-item{
   font-size:13px;
   padding:5px 0;
   border-bottom:1px dashed var(--gris-borde);
+  text-align:center;
 }
 .ce-item:last-child{border-bottom:none;}
 .ce-letter{font-weight:600;color:var(--azul);margin-right:6px;}
-.sin-ra{color:var(--texto-suave);font-size:13px;font-style:italic;}
+.sin-ra{color:var(--texto-suave);font-size:13px;font-style:italic;text-align:center;}
 
 footer.pie{
   text-align:center;
@@ -264,7 +279,6 @@ const CATEGORIAS_ORDEN = [
   "Programa de Enriquecimiento Educativo (PEE)"
 ];
 
-// Índice plano de módulos para búsqueda
 const MODULE_INDEX = [];
 for (const cicloCod of Object.keys(DATA)) {
   const ciclo = DATA[cicloCod];
