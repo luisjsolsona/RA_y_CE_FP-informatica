@@ -10,3 +10,19 @@ Esta es una copia de seguridad NO OFICIAL y puede quedar desactualizada. Consult
 
 - Fuente original: https://centrosdocentes.catedu.es/awc/public/pages/familias/ciclos.php?familia=IFC
 - Portal oficial de Formacion Profesional: https://www.todofp.es/que-estudiar/grados-d.html
+
+## Ejemplos
+
+Asi se ve la aplicacion:
+
+### Listado de ciclos formativos
+![Listado de ciclos](capturas/listado-ciclos.png)
+
+### Busqueda de un modulo
+![Busqueda de modulo](capturas/busqueda-modulo.png)
+
+### Modulo con Resultados de Aprendizaje y Criterios de Evaluacion
+![Modulo con RA y CE](capturas/vista-modulo-ra-ce.png)
+
+### Tabla de modulos de un ciclo
+![Tabla de modulos de un ciclo](capturas/vista-ciclo-tabla.png)
